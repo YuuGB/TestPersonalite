@@ -18,14 +18,14 @@ class Question{
 var Questions = [
 
 new Question(
-    "Vous participez à une soirée chez un ami mais ne connaissez que lui:",
-    "Vous êtes Batman, tapis dans l'ombre, vous surveillez chaque mouvement et chaque bouteille!",
+    "Si tu devais partir pour une destination inconnue ET sans retour possible, où souhaiterais-tu aller ?",
+    "Dans un endroit qui ressemble trait pour trait à ton chez toi, ton quartier et attends... Mais C'EST chez toi !",
     1,
-    "Vous remplacez le DJ! 'Bouge de là David, je vais mettre le feu!'",
+    "Dans ta tête, l'imaginaire est un endroit sans limite",
     2,
-    "Vous n'y allez tout simplement pas!",
+    "Sur une planète au fin fond de la Voie lactée",
     3,
-    "Vous participez au conversation sans forcément toujours les initialiser, vous vous fondez dans la masse.",
+    "Sur une île paradisiaque, le sable comme palier et le ciel bleu pour seul toit",
     4 
 ),
 
