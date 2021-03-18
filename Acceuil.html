@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Test ta personnalité!</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script src="class.js"></script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+    </head>
+
+	<body>
+        <div id="menu" class="hidden">
+            <nav>
+                <ul>
+                    <li><button class="aboutUs" value="1" onclick="start(this.value)" >Accueil</button></li>
+                    <li><button class="aboutUs" value="2"onclick="start(this.value)">Test</button></li>
+                    <li><button class="aboutUs" value="3" onclick="start(this.value)">About</button></li>
+                </ul>
+            </nav>
+        </div>
+              
+
+        <div id="acceuil">
+
+            <figure>
+                <figcaption>PomPom Gurls by Azra:</figcaption>
+                <audio
+                    controls
+                    loop
+                    autoplay
+                    src="Music/POMPOM_GURLS_v2.2_looped.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+            </figure>
+
+            <button class="btn-ouvertureMenu" id="btn-ouvertureMenu" onclick="clickMenu()">
+                <div class="ouvertureMenu">
+                    <div class="bar bar--1" id="bar--1"></div>
+                    <div class="bar bar--2" id="bar--2"></div>
+                </div>
+            </button>
+            
+            <div class="textAcceuil" id="textAcceuil">
+                <h1 id="Acceuil">Accueil</h1>
+                <p>
+                    Bienvenue sur ce test psychologique à but humoristique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minima enim deleniti architecto inventore nisi similique illo accusamus, expedita iste magnam sed dolores! Itaque magni iure voluptas illo ex qui?<br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus rerum ratione quos ab provident error aliquam sint voluptate consequuntur, aperiam reprehenderit hic totam est mollitia neque dolor ex quis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum recusandae natus quo, placeat commodi laboriosam doloremque, aperiam sequi distinctio vel consectetur ad minus architecto quos dolore atque! Rem, delectus!
+                </p>
+                <button id="start" value="2" onclick="startQuizz() , depart()"><strong>Commencer</strong></button>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur unde sequi rerum animi, repellendus blanditiis ducimus labore, qui consectetur veritatis pariatur, nihil modi reprehenderit atque nulla? Nostrum, similique vero.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quibusdam iure minus minima molestiae doloremque repudiandae illo sunt aliquam, odit maiores sequi vitae delectus ratione unde nemo, recusandae tempora dolorum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, tempora. Fugit voluptas provident magnam libero voluptates dolorem quod ea necessitatibus. Itaque numquam fugiat iusto dignissimos, facilis optio minus aliquam commodi?
+                </p>
+                
+            </div>
+
+<!--    /////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+            <div id="Question">
+            
+                <h1 id="ennonce"></h1>
+    
+                <div id="Reponses">
+                        <section  class="card" id="section1" value="" onclick="calculResult(this.value) ; next()">
+                            <p class="content" id="answer1" ></p>
+                        </section>
+    
+                        <section  class="card" id="section2" value="" onclick="calculResult(this.value) ; next()">
+                            <p class="content" id="answer2" ></p>
+                        </section>
+    
+                        <section  class="card" id="section3" value="" onclick="calculResult(this.value) ; next()">
+                            <p class="content" id="answer3" ></p>
+                        </section>
+    
+                        <section  class="card" id="section4" value="" onclick="calculResult(this.value) ; next()">
+                            <p class="content" id="answer4" ></p>
+                        </section>
+                </div>
+    
+                <button id="back" onclick="back()"><strong>Retour</strong></button>
+                <button id="back0" onclick="retour0()"><strong>Remettre à 0</strong></button>
+            </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+            <div id="aboutUs">
+                <div id="container">
+
+                    <div class="clip clip1">
+                        <div class="content">
+                            <h1>Black</h1>
+                            <p>Black est co-developpeur de ce site mais il fait également partie de l'équipe artistique.</p>
+                        </div>
+                    </div>
+
+                    <div class="clip clip2">
+                        <div class="content">
+                            <h1>Théo saïd "YuuGB" SADK</h1>
+                            <p>Co-développeur, Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="clip clip3">
+                        <div class="content">
+                            <h1>Yunalii</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        
+        
+        
+            <script src="javascript.js"></script>
+            <script src="style.js"></script>
+    </body>
+
+</html>

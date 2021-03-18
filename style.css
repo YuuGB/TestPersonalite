@@ -1,0 +1,415 @@
+/* All */
+
+ body{
+    background-image: url(Images/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vmax;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.btn-ouvertureMenu{
+    --size:70px;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(255, 255, 255, 0.0);
+    position: relative;
+    margin: 20px auto;
+    border: 0px solid rgba(255, 255, 255, 0.0);
+    grid-column: 1/1;
+    z-index: 2;
+}
+
+.bar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: black;
+    transition: transform 0.5s ease;
+}
+
+.bar--1{
+     transform: translateY(-7px);
+ }
+
+.bar--2{
+    transform: translateY(7px);
+}
+
+.btn-ouvertureMenu:hover .bar--1{
+
+    transform: translateY(-7px) rotate(-180deg) ;
+  
+}
+
+.btn-ouvertureMenu:hover .bar--2{
+
+    transform: translateY(7px) rotate(-180deg) ;
+  
+}
+
+.btn-ouvertureMenu:hover .active1{
+    transform: translateY(14px) rotate(225deg) ;
+
+}
+
+.btn-ouvertureMenu:hover .active2{
+    transform: translateY(14px) rotate(-45deg) ;
+}
+
+.active1{
+    transform: translateY(14px) rotate(45deg) ;
+
+}
+
+.active2{
+    transform: translateY(14px) rotate(-225deg) ;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    width: 60%;
+    height: 80vmax;
+    right: 0;
+    transition: transform 1s ease;
+    background: rgba(255,255,255,0.8);
+    border-top: 2px solid rgba(255,255,255,0.8);
+    border-left: 2px solid rgba(255,255,255,0.8);
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    backdrop-filter: blur(1px);
+}
+
+#music{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+    z-index: 2;
+}
+
+.hidden{
+    transform: translateX(500%);
+    transition-delay: 1500ms;
+}
+
+
+
+.aboutUs{
+    width: 50vmax;
+    height: 8vmax;
+    background: rgba(255, 255, 255, 0.0);
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 150px;
+    border: 0px solid rgba(255, 255, 255, 0.0);
+    list-style: none;
+    transition: 300ms;
+    z-index: 3;    
+}
+
+#menu li:hover .aboutUs{
+    transform: translateX(30%) rotate(5deg);
+    transition: 1000ms;
+    color: red;
+}
+
+li{
+    list-style: none;
+    width: 100%;
+}
+
+ul{
+    position: absolute;
+    left: -40px;
+}
+
+
+ 
+
+
+/*///////////////////////// Accueil //////////////////////////////////////////////////*/
+#acceuil{
+position: relative;
+margin-top: 20px;
+color: white;
+font-size: 30px;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+width: 100vmax;
+}
+
+
+.textAcceuil{
+    background-color:rgba(0, 0, 0, 0.8) ;
+    text-align: center;
+    margin: 0px auto;
+    border: 3px solid rgb(255, 255, 255) ;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+    transition: 0.8s;
+    width: 80vmax;
+    height: 40vmax;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 3fr 0.005fr;
+    justify-items: center;
+    z-index: 1;
+    
+}
+
+
+
+#start{
+    background-color: rgb(185,11,36);
+    height: 50px;
+    width: 225px;
+    border: 2px rgb(164, 0, 0) solid;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(208,206,206);
+    transition: 0.8s;
+}
+
+#start:hover{
+    width: 100%;
+    background-color:rgb(206, 7, 7);
+    transition: 0.8s;
+
+}
+
+figure{
+    position: absolute;
+    margin: 10px;
+}
+
+
+/*////////////////////////////////////////////////////////////// Index //////////////////////////////////////////////*/
+#Question{
+    flex-grow: 1;
+    opacity: 0%;
+    position: absolute;
+    top: 150px;
+    left: 75px;
+    transition: 2s;
+    z-index: 0;
+}
+
+#Reponses{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+}
+
+#Reponses .card{
+    position: relative;
+    margin: 30px;
+    height: 20vmax;
+    width: 280px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border:2px rgba(255, 255, 255, 0.5) solid ;
+    border-top: 2px rgba(255, 255, 255, 0.5) solid;
+    border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    box-shadow: 20px 20px 5px rgba(0,0,0,0.5);
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 50px;
+
+}
+
+.card .content{
+    transform: translateY(300px);
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    z-index: 1;
+}
+
+.card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card button{
+    position: absolute;
+    bottom: 20px;
+    left: auto;
+    right: auto;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+
+}
+
+#ennonce{
+    color: rgb(208,206,206);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 48px;
+}
+
+#back{
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 80px;
+    width: 140px;
+    border-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(208,206,206);
+    transition: 0.8s;
+    position: fixed;
+    bottom: -1050px;
+    left: 57vmax ;
+}
+
+#back0{
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 80px;
+    width: 340px;
+    border-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(208,206,206);
+    transition: 0.8s;
+    position: fixed;
+    bottom: -1050px;
+    left: 27vmax ;
+    padding-right: 70px ;
+}
+
+#back:hover{
+    height: 51px;
+    transform: translateY(-7px) rotate(360deg) ;
+    transition: 0.8s;
+}
+
+#back0:hover{
+    font-size: 35px;
+}
+
+#ennonce{
+    transition-delay: 10s;
+    opacity: 100%;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////// About us //////////////////////////////////////////*/
+#aboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0%;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 0;
+    transition: 2s;
+}
+
+#container{
+    background: rgba(0,0,0,0.8);
+    width: 80vmax;
+    height: 80vh;
+    position: relative;
+    transition: 0.1s;
+}
+
+#container .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#container .clip.clip1{
+    background-image: url(Images/img1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 35% 0, 25% 100%, 0 100%);
+}
+
+#container .clip.clip2{
+    background-image: url(Images/img2.jpg);
+    background-size: cover;
+    clip-path: polygon(35% 0, 65% 0, 75% 100%, 25% 100%);
+}
+
+#container .clip.clip3{
+    background-image: url(Images/img3.jpg);
+    background-size: cover;
+    clip-path: polygon(65% 0, 100% 0, 100% 100%, 75% 100%);
+}
+
+#container:hover .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+#container .clip:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#container .content{
+    position: absolute;
+    bottom: -300px;
+    left: 10px;
+    width : 60vmax;
+    opacity:0% ;
+    background-color: rgba(255, 255, 255, 0.85) ;
+    color: black;
+    transition: 1s;
+}
+
+#container .clip:hover .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width : 60vmax;
+    opacity:100% ;
+    background-color: rgba(255, 255, 255, 0.85) ;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
