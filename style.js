@@ -16,7 +16,7 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 
 
 
-let musics = document.getElementById("music");
+let musics = document.getElementById("menu");
 let menuOpened = false;
 
 function clickMenu() {
