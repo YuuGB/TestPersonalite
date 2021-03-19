@@ -270,8 +270,8 @@ figure{
 
 #ennonce{
     color: rgb(208,206,206);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    /*-webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;*/
     font-size: 38px;
 }
 
