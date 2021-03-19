@@ -33,7 +33,7 @@
     left: 0;
     width: 100%;
     height: 5px;
-    background: rgb(255, 196, 0);
+    background: rgb(255, 179, 0);
     transition: transform 0.5s ease;
 }
 
