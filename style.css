@@ -269,8 +269,9 @@ figure{
 }
 
 #ennonce{
-    color: rgb(208,206,206);
-    /*-webkit-text-stroke: 1px;
+    color: red;
+    /*color: rgb(208,206,206);
+    -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;*/
     line-height: 2em;
     font-size: 1em;
