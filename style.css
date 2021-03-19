@@ -221,7 +221,7 @@ figure{
     position: relative;
     margin: 30px;
     height: 20vmax;
-    width: 280px;
+    width: 20vmax;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.5);
     border:2px rgba(255, 255, 255, 0.5) solid ;
