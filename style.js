@@ -16,7 +16,7 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 
 
 
-let musics = document.getElementById("menu");
+let menu = document.getElementById("menu");
 let menuOpened = false;
 
 function clickMenu() {
@@ -30,7 +30,7 @@ function clickMenu() {
     menu.classList.toggle("hidden");
 
     if (menuOpened == true){
-        musics.classList.add("hidden");
+        menu.classList.add("hidden");
         menuOpened = false;
     } else{
         menuOpened = true;

@@ -24,11 +24,14 @@ function start(value){
 
     if (value == 1){
         startAccueil();
+        clickMenu();
     } else if (value == 2) {
         startQuizz();
         depart();
+        clickMenu();
     } else if (value == 3) {
         startAboutUs();
+        clickMenu();
     }
 };
 
