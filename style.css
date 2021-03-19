@@ -269,11 +269,10 @@ figure{
 }
 
 #ennonce{
-    color: red;
-    /*color: rgb(208,206,206);
+    color: rgb(208,206,206);
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;*/
-    width: 50vmax;
+    -webkit-text-stroke-color: black;
+    width: 80vmax;
 }
 
 #back{
