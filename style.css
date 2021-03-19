@@ -272,7 +272,9 @@ figure{
     color: rgb(208,206,206);
     /*-webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;*/
-    font-size: 38px;
+    line-height: 2em;
+    font-size: 1em;
+    width: 50vmax;
 }
 
 #back{
