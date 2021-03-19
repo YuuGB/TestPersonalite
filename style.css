@@ -151,38 +151,46 @@ display: flex;
 flex-direction: column;
 min-height: 100vh;
 width: 100vmax;
+
 }
 
 
-.textAcceuil{
-    background-color:rgba(0, 0, 0, 0.8) ;
+fieldset{
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
     border: 3px solid rgb(255, 255, 255) ;
     border-radius: 10px;
     box-shadow: 10px 5px 5px black;
     transition: 0.8s;
-    width: 80vmax;
-    height: 40vmax;
+    width: 90%;
+    height: 90%;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 3fr 0.005fr;
     justify-items: center;
     z-index: 1;
-    
+    padding: 10px;
+}
+
+#textAcceuil{
+    background-color:rgba(0, 0, 0, 0.8) ;
+    width: 85%;
+    height: 81vh;
+    justify-items: center;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+    margin: 0 auto;
 }
 
 
 
 #start{
-    background-color: rgb(185,11,36);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 50px;
     width: 225px;
     border: 2px rgb(164, 0, 0) solid;
     border-radius: 10px;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 100px;
     color: rgb(208,206,206);
     transition: 0.8s;
 }
@@ -202,6 +210,7 @@ figure{
 
 /*////////////////////////////////////////////////////////////// Index //////////////////////////////////////////////*/
 #Question{
+    width: 90%;
     flex-grow: 1;
     opacity: 0%;
     position: absolute;
@@ -215,13 +224,16 @@ figure{
     width: 100%;
     display: flex;
     flex-grow: 1;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 #Reponses .card{
     position: relative;
-    margin: 30px;
-    height: 20vmax;
-    width: 20vmax;
+    margin: 20px;
+    height: 25vh;
+    width: 8vh;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.5);
     border:2px rgba(255, 255, 255, 0.5) solid ;
@@ -270,9 +282,11 @@ figure{
 
 #ennonce{
     color: rgb(208,206,206);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
-    width: 80vmax;
+    width: 100%;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 #back{
@@ -336,11 +350,12 @@ figure{
     transform: translate(-50%, -45%);
     z-index: 0;
     transition: 2s;
+    width: 100%;
 }
 
 #container{
     background: rgba(0,0,0,0.8);
-    width: 80vmax;
+    width: 80%;
     height: 80vh;
     position: relative;
     transition: 0.1s;
@@ -352,7 +367,7 @@ figure{
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 1s;
+    transition: 0.19s;
 }
 
 #container .clip.clip1{
